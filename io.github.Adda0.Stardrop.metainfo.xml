@@ -10,6 +10,16 @@
 
   <description>
     <p>
+      StardropForked is my fork of Stardrop with some custom changes and added support for Flatpak.
+    </p>
+    <p>
+      It is an alpha version and there are still some parts which do not work for one reason or another, but in general the Flatpak seems to be in a working state. Adding mods, checking for updates, selecting mods for your mod list, and updating your profiles works.
+    </p>
+    <p>
+      Feel free to test it and give me a report on how well it works for you. First, read the instructions on the homepage on how to use the Flatpak. Direct all issues and bug reports to the issues there. It should be safe to use, but there are no guarantees. The version is still a testing alpha version. I would highly appreciate it if some of you could give it a try (any Linux users, especially those on Steam Deck, and anyone else with Flatpak support on their system) and report back what are the results.
+    </p>
+
+    <p>
       Stardrop is an open-source, cross-platform mod manager for the game Stardew Valley. It is built using the Avalonia UI framework.
     </p>
     <p>
@@ -41,6 +51,11 @@
   </developer>
 
   <releases>
+    <release version="1.0.0-beta.38-custom_adda.3" date="2024-01-22">
+      <description>
+        <p>Rebase onto upstream with merged custom changes.</p>
+      </description>
+    </release>
     <release version="1.0.0-beta.38-custom_adda.2" date="2023-12-29">
       <description>
         <p>The initial release of StardropForked on Flathub.</p>
