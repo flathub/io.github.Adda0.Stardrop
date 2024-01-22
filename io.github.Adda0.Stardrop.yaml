@@ -46,13 +46,14 @@ modules:
     build-commands:
       - "install-sdk.sh"
       - "dotnet publish -c Release --source ./nuget-sources Stardrop/Stardrop.csproj --self-contained true"
-      - cp -r /run/build/Stardrop/Stardrop/bin/Release/linux-*/publish/* /app/bin/
+      - cp -r --remove-destination /run/build/Stardrop/Stardrop/bin/Release/linux-*/publish/* /app/bin/
     sources:
       - nuget-sources.json
-
       - type: archive
-        url: "https://github.com/Adda0/Stardrop/archive/refs/tags/v1.0.0-beta.38-custom_adda.2.tar.gz"
-        sha256: c625d5b438a19b6502dd2bfc34e4a1dc12ab70ba1245dacf146158438f7aef1c
+        url: "https://github.com/Adda0/Stardrop/archive/refs/tags/v1.0.0-beta.38-custom_adda.3.tar.gz"
+        sha256: 4daf0966cb909f6e0bd6ba944ac7472e096205a29640c5eaddf0c3257bfe57ae
+      - type: file
+        path: global.json
   - name: Meta
     buildsystem: simple
     build-commands:
