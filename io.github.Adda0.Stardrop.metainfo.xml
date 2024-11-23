@@ -43,15 +43,10 @@
     </screenshot>
   </screenshots>
 
-  <developer_name>David "Adda" Chocholatý</developer_name>
-  <developer id="io.github.adda0">
-    <url>https://github.com/Adda0/</url>
-    <name>David "Adda" Chocholatý</name>
-  </developer>
-  <developer id="io.gitbook.floogen">
-    <url>https://github.com/Floogen/</url>
-    <name>Floogen</name>
-  </developer>
+    <developer id="io.github.adda0">
+      <url>https://github.com/Adda0/</url>
+      <name>David "Adda" Chocholatý</name>
+    </developer>
 
   <releases>
     <release version="1.2.1-custom_adda.3" date="2024-11-23">
