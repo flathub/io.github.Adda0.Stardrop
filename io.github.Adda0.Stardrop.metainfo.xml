@@ -49,7 +49,7 @@
     </developer>
 
   <releases>
-    <release version="1.8.4-beta.2-custom_adda.1" date="2026-04-03">
+    <release version="1.8.4-beta.2-custom_adda.3" date="2026-04-03">
       <description>
         <p>Update to Stardrop 1.8.4-beta.2.</p>
       </description>
@@ -72,4 +72,5 @@
   </releases>
 
   <url type="homepage">https://github.com/Adda0/Stardrop</url>
+  <url type="vcs-browser">https://github.com/Adda0/Stardrop</url>
 </component>
