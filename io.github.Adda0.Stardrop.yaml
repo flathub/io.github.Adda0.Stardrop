@@ -1,13 +1,13 @@
 app-id: io.github.Adda0.Stardrop
 runtime: org.freedesktop.Platform
-runtime-version: '23.08'
+runtime-version: '25.08'
 sdk: org.freedesktop.Sdk
 sdk-extensions:
-  - org.freedesktop.Sdk.Extension.dotnet7
+  - org.freedesktop.Sdk.Extension.dotnet8
 build-options:
-    append-path: /usr/lib/sdk/dotnet7/bin
-    append-ld-library-path: /usr/lib/sdk/dotnet7/lib
-    prepend-pkg-config-path: /usr/lib/sdk/dotnet7/lib/pkgconfig
+    append-path: /usr/lib/sdk/dotnet8/bin
+    append-ld-library-path: /usr/lib/sdk/dotnet8/lib
+    prepend-pkg-config-path: /usr/lib/sdk/dotnet8/lib/pkgconfig
 command: "Stardrop"
 finish-args:
   - "--socket=x11"
@@ -17,30 +17,6 @@ finish-args:
   - "--filesystem=home"
   - "--socket=pulseaudio"
 modules:
-  # Taken from https://github.com/flathub/com.unity.UnityHub/blob/af171c1ee22994e7ef698004bd44ba7e8bc71cf0/openssl-1.1.yaml.
-  - name: openssl-1.1
-    buildsystem: simple
-    build-commands:
-      - ./config --prefix=/app
-      - make -j $FLATPAK_BUILDER_N_JOBS
-      - make install
-    cleanup:
-      - /share/doc
-      - /share/man
-      - '*.a'
-      # Don't mask CLI tools provided by runtime - we just want the versioned shared library
-      - /bin
-      # Don't mask unversion library symlinks from library
-      - /lib/libcrypto.so
-      - /lib/libssl.so
-    sources:
-      - type: archive
-        url: https://www.openssl.org/source/openssl-1.1.1w.tar.gz
-        sha256: cf3098950cb4d853ad95c0841f1f9c6d3dc102dccfcacd521d93925208b76ac8
-        x-checker-data:
-          type: anitya
-          project-id: 20333
-          url-template: https://www.openssl.org/source/openssl-$version.tar.gz
   - name: Stardrop
     buildsystem: simple
     build-commands:
@@ -50,8 +26,8 @@ modules:
     sources:
       - nuget-sources.json
       - type: archive
-        url: "https://github.com/Adda0/Stardrop/archive/refs/tags/v1.2.1-custom_adda.3.tar.gz"
-        sha256: 6114675290b14df82ed76b3a77e2edc280c627876b611e819d6f3cab605a7dad
+        url: "https://github.com/Adda0/Stardrop/archive/refs/tags/v1.8.4-beta.2-custom_adda.3.tar.gz"
+        sha256: 27842763ae075f0383e9043b1c3ead6375319d1cfd252fe4a21888831d14633b
       - type: file
         path: global.json
   - name: Meta
