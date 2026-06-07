@@ -3,14 +3,14 @@
   <id>io.github.Adda0.Stardrop</id>
 
   <name>StardropForked</name>
-  <summary>Unofficial fork of Stardrop with custom changes</summary>
+  <summary>Unofficial fork of Stardrop</summary>
 
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0-or-later</project_license>
 
   <description>
     <p>
-      StardropForked is my fork of Stardrop with added support for Flatpak.
+      StardropForked is my fork of Stardrop with added support for Flatpak (no additional changes have been made).
     </p>
     <p>
       While all should already work, there may still be some features of the upstream Stardrop which do not work for one reason or another, but in general the Flatpak seems to be in a working state. Adding mods, checking for updates, selecting mods for your mod list, and updating your profiles works.
@@ -54,6 +54,12 @@
     </developer>
 
   <releases>
+    <release version="1.9.0" date="2026-06-07">
+      <description>
+        <p>Update to Stardrop 1.9.0.</p>
+        <p>Uses upstream Stardrop source directly, making no additional changes to the project.</p>
+      </description>
+    </release>
     <release version="1.8.4-beta.2-custom_adda.3" date="2026-04-03">
       <description>
         <p>Update to Stardrop 1.8.4-beta.2.</p>
