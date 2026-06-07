@@ -28,6 +28,11 @@ modules:
       - type: archive
         url: "https://github.com/Floogen/Stardrop/archive/refs/tags/v1.9.0.tar.gz"
         sha256: bc153b32e7b7dcf6187ce39d4cdf09669656f710e4fe01929d65da1e26c7f1a9
+        x-checker-data:
+          type: anitya
+          project-id: 390531
+          stable-only: false
+          url-template: https://github.com/Floogen/Stardrop/archive/refs/tags/v${version}.tar.gz
       - type: file
         path: global.json
   - name: Meta
