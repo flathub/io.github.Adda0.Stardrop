@@ -31,7 +31,7 @@
       Other features, such as downloading mod updates via Stardrop are available to premium Nexus Mods users.
     </p>
   </description>
-  <content_rating type="oars-1.1" />
+  <content_rating type="oars-1.1"/>
   <launchable type="desktop-id">io.github.Adda0.Stardrop.desktop</launchable>
   <screenshots>
     <screenshot type="default">
@@ -54,6 +54,9 @@
     </developer>
 
   <releases>
+    <release version="1.10.0-beta.2" date="2026-09-01">
+      <description></description>
+    </release>
     <release version="1.9.0" date="2026-06-07">
       <description>
         <p>Update to Stardrop 1.9.0.</p>
