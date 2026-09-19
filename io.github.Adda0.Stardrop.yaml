@@ -1,6 +1,6 @@
 app-id: io.github.Adda0.Stardrop
 runtime: org.freedesktop.Platform
-runtime-version: '25.08'
+runtime-version: '26.08'
 sdk: org.freedesktop.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.dotnet8
@@ -26,8 +26,8 @@ modules:
     sources:
       - nuget-sources.json
       - type: archive
-        url: "https://github.com/Floogen/Stardrop/archive/refs/tags/v1.9.0.tar.gz"
-        sha256: bc153b32e7b7dcf6187ce39d4cdf09669656f710e4fe01929d65da1e26c7f1a9
+        url: "https://github.com/Floogen/Stardrop/archive/refs/tags/v1.10.3.tar.gz"
+        sha256: 11879f55c1268247cef31c4bbf928377fe765d9ab32dae5007be763125d9a445
         x-checker-data:
           type: anitya
           project-id: 390531
