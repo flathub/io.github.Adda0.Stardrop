@@ -54,6 +54,11 @@
     </developer>
 
   <releases>
+    <release version="1.10.3" date="2026-09-19">
+      <description>
+        <p>Update to Stardrop 1.10.3.</p>
+      </description>
+    </release>
     <release version="1.9.0" date="2026-06-07">
       <description>
         <p>Update to Stardrop 1.9.0.</p>
