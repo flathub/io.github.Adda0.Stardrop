@@ -5,29 +5,31 @@ sdk: org.freedesktop.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.dotnet8
 build-options:
-    append-path: /usr/lib/sdk/dotnet8/bin
-    append-ld-library-path: /usr/lib/sdk/dotnet8/lib
-    prepend-pkg-config-path: /usr/lib/sdk/dotnet8/lib/pkgconfig
-command: "Stardrop"
+  append-path: /usr/lib/sdk/dotnet8/bin
+  append-ld-library-path: /usr/lib/sdk/dotnet8/lib
+  prepend-pkg-config-path: /usr/lib/sdk/dotnet8/lib/pkgconfig
+command: Stardrop
 finish-args:
-  - "--socket=x11"
-  - "--share=ipc"
-  - "--share=network"
-  - "--device=dri"
-  - "--filesystem=home"
-  - "--socket=pulseaudio"
+  - --socket=x11
+  - --share=ipc
+  - --share=network
+  - --device=dri
+  - --filesystem=home
+  - --socket=pulseaudio
 modules:
   - name: Stardrop
     buildsystem: simple
     build-commands:
-      - "install-sdk.sh"
-      - "dotnet publish -c Release --source ./nuget-sources Stardrop/Stardrop.csproj --self-contained true"
-      - cp -r --remove-destination /run/build/Stardrop/Stardrop/bin/Release/linux-*/publish/* /app/bin/
+      - install-sdk.sh
+      - dotnet publish -c Release --source ./nuget-sources Stardrop/Stardrop.csproj
+        --self-contained true
+      - cp -r --remove-destination /run/build/Stardrop/Stardrop/bin/Release/linux-*/publish/*
+        /app/bin/
     sources:
       - nuget-sources.json
       - type: archive
-        url: "https://github.com/Floogen/Stardrop/archive/refs/tags/v1.10.3.tar.gz"
-        sha256: 11879f55c1268247cef31c4bbf928377fe765d9ab32dae5007be763125d9a445
+        url: https://github.com/Floogen/Stardrop/archive/refs/tags/v1.10.4.tar.gz
+        sha256: 7d3967092b06f9a5e658e39d2cc8095bb19f6abcbba2e541d95176d72fef9122
         x-checker-data:
           type: anitya
           project-id: 390531
