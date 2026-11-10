@@ -28,8 +28,8 @@ modules:
     sources:
       - nuget-sources.json
       - type: archive
-        url: https://github.com/Floogen/Stardrop/archive/refs/tags/v1.10.4.tar.gz
-        sha256: 7d3967092b06f9a5e658e39d2cc8095bb19f6abcbba2e541d95176d72fef9122
+        url: https://github.com/Floogen/Stardrop/archive/refs/tags/v1.11.0.tar.gz
+        sha256: 475755a2b4674a07898393153d17426f37d4c28a61f8a74b95d8d5aff474778e
         x-checker-data:
           type: anitya
           project-id: 390531
